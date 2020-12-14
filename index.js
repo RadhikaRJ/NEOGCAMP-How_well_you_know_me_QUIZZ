@@ -43,8 +43,6 @@ for(var i=0;i<questions.length;i++){
   console.log("_______________________________________\n")
 }
 console.log("Your final score: ", score)
-if(score>highest_score)
-{
-console.log(chalk.bgGreen("You are the highest scorer! Congratulations!!"))
-}
-else console.log(chalk.bgRed("Oops!..Your score is less than the highest scorer!\n The highest score is: ", highest_score))
+score>highest_score
+  ?console.log(chalk.bgGreen("You are the highest scorer! Congratulations!!"))
+  :console.log(chalk.bgRed("Oops!..Your score is less than the highest scorer!\n The highest score is: ", highest_score));
