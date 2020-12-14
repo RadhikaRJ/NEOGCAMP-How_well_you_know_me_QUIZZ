@@ -30,11 +30,11 @@ function play(question,answer){
   var userAnswer = readlineSync.question(chalk.bgBlue(question))
   if(answer===userAnswer){
     console.log(chalk.bgGreen("Right! "))
-    score=score+1;
+    score+=+1;
      }
      else{
        console.log(chalk.bgRed("Wrong!"))
-       score=score-1;
+       score-=-1;
      }
 }
 for(var i=0;i<questions.length;i++){
